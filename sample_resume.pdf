@@ -1,0 +1,54 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1029 >>
+stream
+BT
+/F1 11 Tf
+50 720 Td
+14 TL
+(Jane Doe) Tj T*
+(Email: jane.doe@example.com | GitHub: github.com/janedoe | LinkedIn: linkedin.com/in/janedoe) Tj T*
+() Tj T*
+(PROFESSIONAL SUMMARY:) Tj T*
+(Backend and Machine Learning Engineer with 3+ years experience designing scalable APIs.) Tj T*
+(Proficient in Python, SQL, Git, Docker, and AWS.) Tj T*
+() Tj T*
+(TECHNICAL SKILLS:) Tj T*
+(Languages: Python, SQL, C++, HTML, CSS, JavaScript) Tj T*
+(Frameworks & Libraries: FastAPI, Flask, Pandas, NumPy, Scikit-learn, PyTorch) Tj T*
+(Tools & Platforms: Git, GitHub, Docker, AWS, PostgreSQL, MySQL) Tj T*
+(Concepts: REST APIs, Machine Learning, Data Preprocessing, CI/CD) Tj T*
+() Tj T*
+(EXPERIENCE:) Tj T*
+(Software Engineer at DataTech Solutions \(2022 - Present\)) Tj T*
+(- Developed RESTful APIs using FastAPI and PostgreSQL serving 50000+ daily requests.) Tj T*
+(- Containerized applications using Docker and deployed cloud services to AWS.) Tj T*
+(- Integrated PyTorch models into backend services reducing inference time by 28%.) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001322 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1392
+%%EOF
