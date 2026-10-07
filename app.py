@@ -33,10 +33,17 @@ GEMINI_MODEL_NAME = "gemini-3.5-flash-lite"
 # ------------------------------------------------------------------------------
 def get_gemini_api_key() -> str:
     """
-    Safely retrieves the Gemini API key from the local .env file or environment.
+    Safely retrieves the Gemini API key from Streamlit secrets, local .env, or environment.
     Never exposes, prints, or displays the key.
     """
-    # Look for .env in the project directory first, then standard search
+    # 1. First check Streamlit secrets (for Streamlit Community Cloud)
+    try:
+        if "GEMINI_API_KEY" in st.secrets and str(st.secrets["GEMINI_API_KEY"]).strip():
+            return str(st.secrets["GEMINI_API_KEY"]).strip()
+    except Exception:
+        pass
+
+    # 2. Look for .env in the project directory first, then standard search
     project_dir = os.path.dirname(os.path.abspath(__file__))
     env_path = os.path.join(project_dir, ".env")
     if os.path.exists(env_path):
@@ -44,6 +51,7 @@ def get_gemini_api_key() -> str:
     else:
         load_dotenv(find_dotenv(), override=True)
 
+    # 3. Fall back to environment variable
     key = os.environ.get("GEMINI_API_KEY", "")
     return key.strip() if key else ""
 
